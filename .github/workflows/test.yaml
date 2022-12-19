@@ -20,6 +20,9 @@ jobs:
           local-testing: start
           local-identifier: random
 
+      - name: 'Checkout the repository'
+        uses: actions/checkout@v2
+
       - name: 'Building web application to be tested'
         run: pip install -r requirements.txt
 
