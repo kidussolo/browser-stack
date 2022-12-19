@@ -74,7 +74,7 @@ def run_session(cap):
         command_executor=URL,
         options=options)
     try:
-        driver.get("http://localhost:8000")
+        driver.get("http://localhost:8099")
         WebDriverWait(driver, 10).until(EC.title_contains("Using Python's SimpleHTTPServer Module"))
         # Get text Hello World! text
         item_on_page = WebDriverWait(driver, 10).until(
